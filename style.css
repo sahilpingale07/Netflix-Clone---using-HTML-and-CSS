@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:scroll;
+  width: fit-content;
+  min-height: 80vh;
+  position: relative;
+
+}
+.main .box {
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  max-width: 70vw;
+  height: 80px;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+nav img {
+  color: red;
+  position: relative;
+  z-index: 10;
+  width: 150px;
+  margin-top: 20px;
+  height: 150px;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.main .head {
+  color: white;
+  height: 89%;
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 30px;
+  margin-top: 140px;
+  text-align: center;
+}
+.head > :first-child {
+  font-size: 48px;
+  letter-spacing: 0px;
+  font-weight: 2000;
+  text-align: center;
+}
+.head:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.head:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.u_int {
+  display: flex;
+  min-width: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+}
+.separate {
+  position: relative;
+  width: 100vw;
+  height: 9px;
+  background-color: rgb(46, 44, 44);
+  margin-top: 250px;
+}
+
+.btndiv {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.btn {
+  padding: 2px 8px;
+  font-weight: bold;
+  border-style: none;
+}
+.btn-sn {
+  background-color: red;
+  color: aliceblue;
+  height: 35px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.s1 {
+  background-color: rgb(23, 23, 23, 0.1);
+  color: rgb(222, 222, 227);
+  border-style: none;
+}
+.langbtn {
+  height: 35px;
+  width: 120px;
+  background-color: rgb(23, 23, 23, 0.1);
+  color: rgb(247, 249, 250);
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.btn-red {
+  background-color: red;
+  color: aliceblue;
+  font-size: 20px;
+  height: 50px;
+  width: 160px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.search {
+  height: 50px;
+  width: 435px;
+  color: white;
+  padding-left: 10px;
+  background-color: rgb(23, 23, 23, 0.1);
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.sec1 {
+  color: white;
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding-bottom:30px;
+}
+@media(max-width:950px){
+    body{font-size: 12px;}
+    .sec1, .sec2, .sec3, .sec4{
+        flex-direction: column;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec2 .imgd2, .sec4 .imgd4{order: 1;}
+}
+.cont {
+  width: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-left: 70px;
+}
+.cont > :first-child {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Martel Sans", sans-serif;
+}
+.cont > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Martel Sans", sans-serif;
+  width: 500px;
+  line-height: 30px;
+}
+.imgd {
+  position: relative;
+  top: 24px;
+  width: 700px;
+  height: 350px;
+  margin: 20px;
+  
+}
+.imgd img {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.imgd video {
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 80%;
+  top: 30px;
+  right: 60px;
+}
+.separate1 {
+  position: relative;
+  width: 100vw;
+  height: 9px;
+  background-color: rgb(46, 44, 44);
+}
+.sec2 {
+  color: white;
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 40px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding-bottom: 30px;
+}
+.cont2 {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 75px;
+}
+.sec2 .imgd2 {
+  position: relative;
+  bottom: 60px;
+  height: 400px;
+}
+.cont2 > :first-child {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 55px;
+}
+.cont2 > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Martel Sans", sans-serif;
+  width: 500px;
+  line-height: 30px;
+  position: relative;
+  top: 10px;
+}
+.imgd2 img {
+  position: relative;
+}
+.plane {
+  display: flex;
+  width: 270px;
+  position: relative;
+  height: 90px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(141, 138, 138);
+  border-radius: 9px;
+  bottom: 140px;
+  left: 90px;
+  background-color: black;
+  padding: 0px 3px;
+}
+.plane > :first-child {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 4px;
+  bottom: 6px;
+}
+.plane > :nth-child(3) {
+  width: 17%;
+  height: auto;
+  position: absolute;
+  left: 225px;
+  bottom: 22px;
+}
+.align {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 68px;
+}
+.align > :first-child {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.align > :nth-child(2) {
+  color: rgb(45, 45, 200);
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.sec3 {
+  color: white;
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  margin-top: 90px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding-bottom: 70px;
+}
+.cont3 {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 69px;
+}
+.cont3 > :first-child {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Martel Sans", sans-serif;
+}
+.cont3 > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Martel Sans", sans-serif;
+  width: 500px;
+  line-height: 30px;
+}
+.imgd3 {
+  position: relative;
+  height: 300px;
+}
+.imgd3 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.imgd3 video {
+  position: relative;
+  width: 65%;
+  padding: 30px;
+  height:60%;
+  bottom: 20px;
+  left: 35px;
+}
+.sec4 {
+  color: white;
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.cont4 {
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+.imgd4 {
+    position: relative;
+  }
+.cont4 > :first-child {
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 55px;
+}
+.cont4 > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Martel Sans", sans-serif;
+  width: 500px;
+  line-height: 40px;
+  position: relative;
+  top: 10px;
+  line-height: 30px;
+}
+.sec5 h2 {
+  text-align: center;
+  color: rgb(240, 242, 244);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  position: relative;
+  top: 60px;
+  margin-bottom: 70px;
+}
+.sec5 .faqs {
+  background-color: rgb(53, 51, 51);
+  font-family: "Martel Sans", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 70vw;
+  margin: 10px auto;
+  text-align: justify;
+  font-size: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.faqs:hover {
+  background-color: rgb(65, 65, 64);
+}
+.sec5 img {
+  width: 40px;
+  height: 40px;
+  padding-right: 15px;
+}
+#t1 {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-family: "Martel Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+footer {
+  color: rgb(155, 151, 151);
+  width: 80vw;
+  margin: 0px auto;
+}
+footer .call {
+  display: block;
+  text-align: left;
+  top: 40px;
+  position: relative;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  top: 50px;
+  margin: 0px auto;
+  justify-content: center;
+}
+.foot_items a {
+  color: rgb(156, 154, 154);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  line-height: 30px;
+}
+.sel_lang {
+  display: inline-block;
+  position: relative;
+  top: 80px;
+}
+.footer .foot_items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+    body {
+      font-size: 14px;
+      align-content: center;
+      overflow-x: hidden;
+      width: 80%;
+    }
+  
+    .main .box {
+      min-height: 100%; 
+    }
+  
+    .nav img {
+      width: 120px; 
+      height: 120px; 
+    }
+  
+    .plane {
+      width: 90%; 
+      bottom: 10px; 
+      left: 10px;
+      margin-top: 20px; 
+      overflow: auto;
+    }
+    .plane>:first-child{
+        object-fit: contain;
+        width: 15%;
+    }
+    .plane>:nth-child(2){
+        position: absolute;
+        left: 60px;  
+    }
+    .plane .align>:first-child{ font-size: 14px;}
+    .plane>:nth-child(3){
+        object-fit: contain;
+        width: 12%;
+        position: absolute;
+        left: 255px;
+    }
+    .sec1, .sec2, .sec3, .sec4 {
+      flex-direction: column;
+      column-gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .sec1, .sec2, .sec3, .sec4, .sec5, .footer {
+      width: 100vw;
+    }
+  
+    .cont, .cont2, .cont3, .cont4 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cont>:first-child, .cont2>:first-child, .cont3>:first-child, .cont4>:first-child{
+        font-size: 30px;
+    }
+    .cont>:nth-child(2), .cont2>:nth-child(2), .cont3>:nth-child(2), .cont4>:nth-child(2){
+        width: 90%;
+        margin-left: auto;
+      margin-right: auto;
+    }
+    .imgd, .imgd2, .imgd3 {
+      width: 90%; 
+    }
+    .imgd2 img{
+     width: 100%;
+    }
+    .imgd4 img{
+     width: 100%;
+    }
+    .imgd video{
+        object-fit:cover;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .imgd3 video {
+      object-fit:cover;
+      width: 60%;
+      top: 0;
+      right: 0;
+    }
+  
+    .nav button {
+      margin-right: 20px; 
+    }
+  
+    .btndiv {
+      flex-direction: column;
+    }
+  
+    .btn-red {
+      width: 100%; 
+    }
+    .langbtn, .btn-sn{
+       width: 90%;
+    }
+    .search {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+    .u_int {
+      flex-direction: column;
+    }
+    .sec5 h2 {
+        font-size: 30px;
+      top: 30px; 
+      margin-bottom: 30px; 
+    }
+    .sec5 .faqs {
+      width: 90%;
+    }
+    #t1 {
+      margin-top: 20px; 
+      margin-bottom: 10px;
+    }
+  
+    footer .call {
+      top: 20px;
+    }
+  
+    .sel_lang {
+      top: 40px; 
+      padding-left: 10px;
+      width: 40%;
+    }
+  
+    .footer .foot_items {
+      margin-bottom: 15px; 
+      padding-left: 8px;
+    }
+    .footer a{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 10px;
+    }
+    .separate1{
+        width: 100vw;
+    }
+    footer span{
+        display: block;
+        position: relative;
+        bottom: 30px;
+    }
+  }
